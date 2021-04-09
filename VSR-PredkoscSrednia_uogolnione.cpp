@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cmath>
 
 using namespace std;
 
@@ -16,7 +15,7 @@ int main()
             cin >> vt;
             v += 1.0f / vt;
         }
-        cout << roundf((float)n / v) << '\n';
+        cout << (float)n / v << '\n';
     }
 
     return 0;
