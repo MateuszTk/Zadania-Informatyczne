@@ -8,8 +8,8 @@ int main()
 {
     int k = 107;
 
-    ifstream input("F:\\dokumenty\\matura_informatyka\\Dane_PR2(1)\\Dane_PR2\\dane_6_1.txt");
-    ofstream output("F:\\dokumenty\\matura_informatyka\\Dane_PR2(1)\\Dane_PR2\\odp_6_1.txt");
+    ifstream input("dane_6_1.txt");
+    ofstream output("odp_6_1.txt");
     string line;
     while (getline(input, line)) {
         for (int i = 0; i < line.length(); i++) {
@@ -22,8 +22,8 @@ int main()
     output.close();
 
 
-    ifstream input2("F:\\dokumenty\\matura_informatyka\\Dane_PR2(1)\\Dane_PR2\\dane_6_2.txt");
-    ofstream output2("F:\\dokumenty\\matura_informatyka\\Dane_PR2(1)\\Dane_PR2\\odp_6_2.txt");
+    ifstream input2("dane_6_2.txt");
+    ofstream output2("odp_6_2.txt");
     int key;
     while (input2 >> line >> key) {
         key %= ('Z' - 'A' + 1);
@@ -39,8 +39,8 @@ int main()
     output2.close();
 
 
-    ifstream input3("F:\\dokumenty\\matura_informatyka\\Dane_PR2(1)\\Dane_PR2\\dane_6_3.txt");
-    ofstream output3("F:\\dokumenty\\matura_informatyka\\Dane_PR2(1)\\Dane_PR2\\odp_6_3.txt");
+    ifstream input3("dane_6_3.txt");
+    ofstream output3("odp_6_3.txt");
     string worda, wordb;
     while (input3 >> worda >> wordb) {
         int key = wordb[0] - worda[0];
