@@ -60,6 +60,7 @@ int main()
 				v = pix[x][y];
 			}
 		}
+		len4 = max(len, len4);
 	}
 
 	cout << "Zad 6.4: " << len4 << '\n';
